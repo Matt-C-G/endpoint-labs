@@ -1,10 +1,1 @@
-{
-  "ComputerName": "demo-endpoint",
-  "Volume": "C:",
-  "ProtectionStatus": "On",
-  "EncryptionPercent": 100,
-  "KeyProtector": "TPM",
-  "RecoveryKeyEscrow": "Present (directory/portal)",
-  "LastCheck": "2025-09-24T14:56:26",
-  "Notes": "Simulated output for portfolio demo"
-}
+{"ComputerName":"demo-endpoint","Volume":"C:","ProtectionStatus":"On","EncryptionPercent":100,"KeyProtector":"TPM","RecoveryKeyEscrow":"Present","LastCheck":"2025-01-01T12:01:00","Notes":"Simulated output"}

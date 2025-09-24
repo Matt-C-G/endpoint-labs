@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" font-family="Inter,Arial">
+  <rect width="100%" height="100%" fill="#0e1726"/>
+  <text x="40" y="50" fill="#9bdcff" font-size="24">BitLocker — Recovery Key (Lab)</text>
+  <text x="40" y="120" fill="#e8f3ff">Volume C: • Status: On • Key protector: TPM</text>
+  <rect x="40" y="150" width="900" height="26" fill="#222"/>
+  <rect x="50" y="154" width="880" height="18" fill="#c33"/>
+  <text x="40" y="200" fill="#ffd">Recovery key present (redacted)</text>
+</svg>

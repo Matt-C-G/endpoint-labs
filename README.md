@@ -1,32 +1,15 @@
-# Endpoint Proof Pack
+# Endpoint Proof Pack (Lab-Simulated)
 
-**Purpose:** Demonstrate endpoint security ops across **Defender for Endpoint**, **Intune/ASR**, **BitLocker**, and **AD hygiene** with attachable evidence.
+**What this proves** — Pilot→Measure→Tune→Enforce→Verify for endpoint controls.
+- Sensor health ≥98% (7-day), ASR FP <1/100 devices, BitLocker On + escrow + recovery drill.
+- Artifacts: JSON outputs, redacted "screens" (SVG), SOPs, one-pager.
 
-**Folders**
-- `sops/` — three 1-page SOPs
-- `scripts/` — PowerShell checks (sensor + BitLocker)
-- `examples/sample_outputs/` — JSON outputs from scripts
-- `evidence/` — redacted screenshots you add
-- `onepager/` — recruiter-friendly summary
-
-**Outcomes to show (pilot/lab)**
-- Sensor health **≥98% (7-day)**
-- ASR false positives **<1/100 devices** before enforce
-- BitLocker enabled with **recovery escrow** and a **recovery drill**
-- **Verify closure** with before/after artifacts
-
-## Run scripts (Windows PowerShell)
-
+**Quick Run (demo-safe)**
 ```powershell
-# Sensor health
-.\scripts\check_sensor.ps1
-.\scripts\check_sensor.ps1 -Simulate   # demo-safe output anywhere
-
-# BitLocker
-.\scripts\check_bitlocker.ps1
+pwsh
+cd endpoint-labs
+.\scripts\check_sensor.ps1 -Simulate
 .\scripts\check_bitlocker.ps1 -Simulate
 ```
 
-Each prints a table and writes JSON into `examples/sample_outputs/`.
-
-— Updated 2025-09-24
+Artifacts land in `examples/sample_outputs/`. Replace SVGs in `evidence/` with real redacted screenshots later.

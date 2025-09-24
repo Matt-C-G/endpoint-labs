@@ -1,14 +1,5 @@
 # SOP — Defender Onboarding & Sensor Health
 
-**Goal:** Microsoft Defender AV + MDE sensor onboarded and healthy.
-
-## Steps
-1) Verify device shows active in Defender portal (last 24h).
-2) Local checks:
-   - `Get-MpComputerStatus` — AV/RT status & signature age
-   - `Get-Service Sense` — `Running` (MDE)
-3) Fix common issues (conflicting AV, proxy/TLS inspection).
-4) Re-onboard if needed; confirm heartbeat.
-5) Run `scripts/check_sensor.ps1`; save JSON and screenshot.
-
-**Evidence:** JSON + portal screenshot (redacted).
+Target: AV + MDE sensor healthy and reporting within 24h.
+Flow: Check portal last seen <24h → Get-MpComputerStatus → Sense service Running → remediate conflicts → re-onboard → capture JSON + screenshot.
+Evidence: `examples/sample_outputs/sensor_status.json` + portal screenshot (redacted).
