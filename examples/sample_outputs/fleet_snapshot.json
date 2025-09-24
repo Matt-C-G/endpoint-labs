@@ -1,0 +1,82 @@
+[
+  {
+    "Hostname": "lab-endpoint-1",
+    "DefenderHealthy": true,
+    "AVSignatureAgeHours": 17,
+    "MdeSensorService": "Running",
+    "BitLocker": "On",
+    "LastCheck": "2025-09-24T17:00:49"
+  },
+  {
+    "Hostname": "lab-endpoint-2",
+    "DefenderHealthy": true,
+    "AVSignatureAgeHours": 5,
+    "MdeSensorService": "Running",
+    "BitLocker": "On",
+    "LastCheck": "2025-09-24T17:00:49"
+  },
+  {
+    "Hostname": "lab-endpoint-3",
+    "DefenderHealthy": true,
+    "AVSignatureAgeHours": 13,
+    "MdeSensorService": "Running",
+    "BitLocker": "On",
+    "LastCheck": "2025-09-24T17:00:49"
+  },
+  {
+    "Hostname": "lab-endpoint-4",
+    "DefenderHealthy": true,
+    "AVSignatureAgeHours": 2,
+    "MdeSensorService": "Running",
+    "BitLocker": "On",
+    "LastCheck": "2025-09-24T17:00:49"
+  },
+  {
+    "Hostname": "lab-endpoint-5",
+    "DefenderHealthy": true,
+    "AVSignatureAgeHours": 2,
+    "MdeSensorService": "Running",
+    "BitLocker": "On",
+    "LastCheck": "2025-09-24T17:00:49"
+  },
+  {
+    "Hostname": "lab-endpoint-6",
+    "DefenderHealthy": true,
+    "AVSignatureAgeHours": 21,
+    "MdeSensorService": "Running",
+    "BitLocker": "On",
+    "LastCheck": "2025-09-24T17:00:49"
+  },
+  {
+    "Hostname": "lab-endpoint-7",
+    "DefenderHealthy": true,
+    "AVSignatureAgeHours": 17,
+    "MdeSensorService": "Running",
+    "BitLocker": "On",
+    "LastCheck": "2025-09-24T17:00:49"
+  },
+  {
+    "Hostname": "lab-endpoint-8",
+    "DefenderHealthy": true,
+    "AVSignatureAgeHours": 7,
+    "MdeSensorService": "Running",
+    "BitLocker": "On",
+    "LastCheck": "2025-09-24T17:00:49"
+  },
+  {
+    "Hostname": "lab-endpoint-9",
+    "DefenderHealthy": true,
+    "AVSignatureAgeHours": 12,
+    "MdeSensorService": "Running",
+    "BitLocker": "On",
+    "LastCheck": "2025-09-24T17:00:49"
+  },
+  {
+    "Hostname": "lab-endpoint-10",
+    "DefenderHealthy": true,
+    "AVSignatureAgeHours": 6,
+    "MdeSensorService": "Running",
+    "BitLocker": "On",
+    "LastCheck": "2025-09-24T17:00:49"
+  }
+]
