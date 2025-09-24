@@ -5,6 +5,6 @@
   "EncryptionPercent": 100,
   "KeyProtector": "TPM",
   "RecoveryKeyEscrow": "Present (directory/portal)",
-  "LastCheck": "2025-09-24T18:31:16.414276",
+  "LastCheck": "2025-09-24T14:56:26",
   "Notes": "Simulated output for portfolio demo"
 }
