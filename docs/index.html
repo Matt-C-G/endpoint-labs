@@ -23,6 +23,28 @@
             padding: 20px;
             border-radius: 8px;
             margin: 20px 0;
+            overflow: hidden;
+        }
+        .evidence img {
+            margin: 0;
+            padding: 0;
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border: none;
+        }
+        .evidence figure {
+            margin: 0;
+            padding: 0;
+            height: auto;
+        }
+        .evidence figcaption {
+            margin: 10px 0 0 0;
+            padding: 0;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
         }
         a {
             color: #0066cc;
@@ -34,12 +56,15 @@
             color: #004499;
         }
         img {
-            max-width: 300px;
+            max-width: 100%;
+            width: 100%;
             height: auto;
             border: 1px solid #ddd;
             border-radius: 4px;
-            margin: 10px 0;
+            margin: 0;
+            padding: 0;
             display: block;
+            object-fit: contain;
         }
         code {
             background: #f4f4f4;
@@ -101,28 +126,34 @@
     <div class="evidence">
         <h3>Microsoft Defender Portal</h3>
         <p>Device health status and sensor reporting</p>
-        <a href="defender_portal_device.png" target="_blank">
-            <img src="defender_portal_device.png" alt="Defender Portal Screenshot">
-        </a>
-        <p><a href="defender_portal_device.png" target="_blank">View full image</a></p>
+        <figure>
+            <a href="defender_portal_device.png" target="_blank">
+                <img src="defender_portal_device.png" alt="Defender Portal Screenshot">
+            </a>
+            <figcaption><a href="defender_portal_device.png" target="_blank">View full image</a></figcaption>
+        </figure>
     </div>
     
     <div class="evidence">
         <h3>ASR Hit Chart</h3>
         <p>Attack Surface Reduction audit to enforce transition</p>
-        <a href="asr_hits_chart.png" target="_blank">
-            <img src="asr_hits_chart.png" alt="ASR Hits Chart">
-        </a>
-        <p><a href="asr_hits_chart.png" target="_blank">View full image</a></p>
+        <figure>
+            <a href="asr_hits_chart.png" target="_blank">
+                <img src="asr_hits_chart.png" alt="ASR Hits Chart">
+            </a>
+            <figcaption><a href="asr_hits_chart.png" target="_blank">View full image</a></figcaption>
+        </figure>
     </div>
     
     <div class="evidence">
         <h3>BitLocker Recovery</h3>
         <p>Recovery key management (redacted)</p>
-        <a href="bitlocker_recovery_redacted.png" target="_blank">
-            <img src="bitlocker_recovery_redacted.png" alt="BitLocker Recovery Screenshot">
-        </a>
-        <p><a href="bitlocker_recovery_redacted.png" target="_blank">View full image</a></p>
+        <figure>
+            <a href="bitlocker_recovery_redacted.png" target="_blank">
+                <img src="bitlocker_recovery_redacted.png" alt="BitLocker Recovery Screenshot">
+            </a>
+            <figcaption><a href="bitlocker_recovery_redacted.png" target="_blank">View full image</a></figcaption>
+        </figure>
     </div>
 
     <h2>Demo Commands</h2>
