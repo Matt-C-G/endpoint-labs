@@ -1,8 +1,71 @@
-<!doctype html><meta charset="utf-8"><title>Endpoint Proof Pack</title>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Endpoint Proof Pack</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font:16px/1.5 system-ui,Segoe UI,Arial;margin:40px;max-width:860px;color:#333}
+    code{background:#f4f4f4;padding:2px 6px;border-radius:4px}
+    .artifact{background:#f8f9fa;padding:15px;margin:10px 0;border-radius:6px;border-left:4px solid #007acc}
+    .evidence{background:#fff3cd;padding:15px;margin:10px 0;border-radius:6px;border-left:4px solid #ffc107}
+    a{color:#007acc;text-decoration:none}
+    a:hover{text-decoration:underline}
+    img{max-width:300px;height:auto;border:1px solid #ddd;border-radius:4px;margin:5px}
+  </style>
+</head>
+<body>
+  <h1>Endpoint Proof Pack (Lab-Simulated)</h1>
+  <p><strong>What this proves:</strong> Pilot→Measure→Tune→Enforce→Verify for endpoint controls.</p>
+  <p>Sensor health ≥98% (7-day), ASR FP <1/100 devices, BitLocker On + escrow + recovery drill.</p>
 
-<h1>Endpoint Proof Pack (Lab-Simulated)</h1>
-<p>Artifacts: <a href="../examples/sample_outputs/sensor_status.json">sensor JSON</a> •
-<a href="../examples/sample_outputs/bitlocker_status.json">bitlocker JSON</a></p>
-<p>Evidence: <a href="../evidence/defender_portal_device.svg">Defender</a> •
-<a href="../evidence/asr_hits_chart.svg">ASR</a> •
-<a href="../evidence/bitlocker_recovery_redacted.svg">BitLocker</a></p>
+  <h2>JSON Artifacts</h2>
+  <div class="artifact">
+    <h3>Defender Sensor Status</h3>
+    <p><a href="artifacts/sensor_status.json">sensor_status.json</a> - Real-time protection status, engine version, signature age</p>
+  </div>
+  <div class="artifact">
+    <h3>BitLocker Encryption Status</h3>
+    <p><a href="artifacts/bitlocker_status.json">bitlocker_status.json</a> - Protection status, encryption percentage, key protector type</p>
+  </div>
+  <div class="artifact">
+    <h3>Fleet Snapshot</h3>
+    <p><a href="artifacts/fleet_snapshot.json">fleet_snapshot.json</a> - 10-device overview with health status</p>
+  </div>
+  <div class="artifact">
+    <h3>ASR Audit Trends</h3>
+    <p><a href="artifacts/asr_hits_timeseries.json">asr_hits_timeseries.json</a> - 24-hour audit→enforce transition data</p>
+  </div>
+
+  <h2>Evidence Screenshots</h2>
+  <div class="evidence">
+    <h3>Microsoft Defender Portal</h3>
+    <p>Device health status and sensor reporting</p>
+    <a href="defender_portal_device.png">
+      <img src="defender_portal_device.png" alt="Defender Portal Screenshot">
+    </a>
+  </div>
+  <div class="evidence">
+    <h3>ASR Hit Chart</h3>
+    <p>Attack Surface Reduction audit to enforce transition</p>
+    <a href="asr_hits_chart.png">
+      <img src="asr_hits_chart.png" alt="ASR Hits Chart">
+    </a>
+  </div>
+  <div class="evidence">
+    <h3>BitLocker Recovery</h3>
+    <p>Recovery key management (redacted)</p>
+    <a href="bitlocker_recovery_redacted.png">
+      <img src="bitlocker_recovery_redacted.png" alt="BitLocker Recovery Screenshot">
+    </a>
+  </div>
+
+  <h2>Demo Commands</h2>
+  <pre><code>pwsh
+cd endpoint-labs
+.\scripts\check_sensor.ps1 -Simulate
+.\scripts\check_bitlocker.ps1 -Simulate</code></pre>
+
+  <p><strong>Repository:</strong> <a href="https://github.com/Matt-C-G/endpoint-labs">github.com/Matt-C-G/endpoint-labs</a></p>
+</body>
+</html>
